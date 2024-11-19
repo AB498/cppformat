@@ -20,7 +20,7 @@ function activate(context) {
 			context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(lang, {
 				provideDocumentFormattingEdits(document, options, token) {
 					const text = document.getText();
-					const cmd_args = vscode.workspace.getConfiguration('cppformat').get('formatargs', 'pad-oper max-continuation-indent=120 style=google') || 'pad-oper max-continuation-indent=120 style=google';
+					const cmd_args = vscode.workspace.getConfiguration('cppformat').get('formatargs', '') || 'pad-oper unpad-paren max-continuation-indent=120 style=google';
 					const [success, formattedText] = wastyle.format(text, cmd_args);
 					if (!success) {
 						vscode.window.showInformationMessage("C/C++ Format: Error while trying to format.");

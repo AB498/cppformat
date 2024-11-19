@@ -4,6 +4,10 @@ Format C/C++ files, including header files using [`AStyle`](https://astyle.sourc
 
 ---
 
+![](imgs/unformat.png)
+
+![](imgs/format.png)
+
 ## Usage
 
 1. Open a file with extensions like `.c`, `.cpp`, `.h`, `.hpp`, `.cc`, or `.cxx`.

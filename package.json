@@ -5,6 +5,10 @@
   "description": "Format C and C++ files, including header files using AStyle. C/CPP Formatter",
   "version": "0.0.1",
   "icon": "imgs/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AB498/cppformat"
+  },
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -41,7 +45,7 @@
         "properties": {
           "cppformat.formatargs": {
             "type": "string",
-            "default": "pad-oper max-continuation-indent=120 style=google",
+            "default": "",
             "description": "Leave empty for default. Astyle Format Arguments in this format: pad-oper max-continuation-indent=120 style=google"
           }
         }
