@@ -1,0 +1,110 @@
+{
+  "publisher": "498",
+  "name": "cppformat",
+  "displayName": "C/C++ Format",
+  "description": "Format C and C++ files, including header files using AStyle. C/CPP Formatter",
+  "version": "0.0.1",
+  "icon": "imgs/icon.png",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "keywords": [
+    "C",
+    "C++",
+    "format",
+    "formatter",
+    "Astyle",
+    "astyle",
+    "clang-format",
+    "gcc",
+    "cppformat",
+    "formatting",
+    "header"
+  ],
+  "categories": [
+    "Formatters",
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:c",
+    "onLanguage:cpp",
+    "onStartupFinished",
+    "workspaceContains:**/*.cpp"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "type": "object",
+        "title": "C/C++ Format: Astyle Format Arguments",
+        "properties": {
+          "cppformat.formatargs": {
+            "type": "string",
+            "default": "pad-oper max-continuation-indent=120 style=google",
+            "description": "Leave empty for default. Astyle Format Arguments in this format: pad-oper max-continuation-indent=120 style=google"
+          }
+        }
+      }
+    ],
+    "commands": [],
+    "languages": [
+      {
+        "id": "cpp",
+        "extensions": [
+          ".cpp",
+          ".cxx",
+          ".cc",
+          ".hpp",
+          ".h"
+        ],
+        "aliases": [
+          "C++",
+          "cpp"
+        ]
+      },
+      {
+        "id": "c",
+        "extensions": [
+          ".c",
+          ".h"
+        ],
+        "aliases": [
+          "C"
+        ]
+      }
+    ],
+    "formatters": [
+      {
+        "language": "cpp",
+        "selector": "source.cpp",
+        "id": "cppformat-formatter",
+        "title": "C/C++ Formatter",
+        "default": true
+      },
+      {
+        "language": "c",
+        "selector": "source.c",
+        "id": "cppformat-c-formatter",
+        "title": "C Formatter",
+        "default": false
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.13.0"
+  },
+  "dependencies": {
+    "wastyle": "^0.0.5"
+  }
+}
