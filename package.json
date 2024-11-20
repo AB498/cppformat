@@ -1,28 +1,31 @@
 {
   "publisher": "498",
   "name": "cppformat",
-  "displayName": "C/C++ Format",
-  "description": "Format C and C++ files, including header files using AStyle. C/CPP Formatter",
-  "version": "0.0.1",
+  "displayName": "C/C++ Format: Astyle Code Formatter",
+  "description": "Format C and C++ code, including header files using AStyle. C/CPP Formatter Prettier",
+  "version": "1.0.7",
   "icon": "imgs/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/AB498/cppformat"
   },
   "engines": {
-    "vscode": "^1.95.0"
+    "vscode": "^0.0.1"
   },
   "keywords": [
-    "C",
-    "C++",
     "format",
     "formatter",
-    "Astyle",
+    "c",
+    "c++",
+    "cpp",
     "astyle",
+    "Astyle",
     "clang-format",
     "gcc",
     "cppformat",
+    "prettier",
     "formatting",
+    "c++ format",
     "header"
   ],
   "categories": [

@@ -4,9 +4,9 @@ Format C/C++ files, including header files using [`AStyle`](https://astyle.sourc
 
 ---
 
-![](imgs/unformat.png)
+![](imgs/format.gif)
 
-![](imgs/format.png)
+---
 
 ## Usage
 
@@ -35,6 +35,13 @@ Nothing needed. [`AStyle`](https://astyle.sourceforge.net/astyle.html) is bundle
 ## Installation
 
 1. Install the **CppFormat** extension from the Visual Studio Code marketplace and you're set!
+
+---
+
+## For more information or help
+
+- [Email (abcd49800@gmail.com)](mailto:abcd49800@gmail.com)
+- [Discord (CodePlayground)](https://discord.gg/dquNGYwfnW)
 
 ---
 
