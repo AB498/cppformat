@@ -41,7 +41,7 @@ Nothing needed. [`AStyle`](https://astyle.sourceforge.net/astyle.html) is bundle
 ## For more information or help
 
 - [Email (abcd49800@gmail.com)](mailto:abcd49800@gmail.com)
-- [Discord (CodePlayground)](https://discord.gg/dquNGYwfnW)
+- [Discord (CodePlayground)](https://discord.gg/ZeeqSBpjU2)
 
 ---
 
