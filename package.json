@@ -3,7 +3,7 @@
   "name": "cppformat",
   "displayName": "C/C++ Format: Astyle Code Formatter",
   "description": "Format C and C++ code, including header files using AStyle. C/CPP Formatter Prettier",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "icon": "imgs/icon.png",
   "repository": {
     "type": "git",

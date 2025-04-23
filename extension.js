@@ -15,7 +15,7 @@ function activate(context) {
 
 		await wastyle.init(fs.readFileSync(`${extensionPath}/assets/astyle.wasm`));
 
-		['cpp', 'c'].forEach((lang) => {
+		['cpp', 'c', 'h', 'hpp', 'cc', 'cxx'].forEach((lang) => {
 
 			context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider(lang, {
 				provideDocumentFormattingEdits(document, options, token) {

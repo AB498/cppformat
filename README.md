@@ -1,6 +1,6 @@
 # CppFormat: Astyle Formatter for C, C++, and Header Files
 
-Format C/C++ files, including header files using [`AStyle`](https://astyle.sourceforge.net/astyle.html) with one keystroke `win+shift+f` (windows) or `cmd+shift+f` (macOS).
+Format C/C++ files, including header files using [`AStyle`](https://astyle.sourceforge.net/astyle.html) with one keystroke `alt+shift+f` (windows) or `cmd+shift+f` (macOS).
 
 ---
 
@@ -11,11 +11,11 @@ Format C/C++ files, including header files using [`AStyle`](https://astyle.sourc
 ## Usage
 
 1. Open a file with extensions like `.c`, `.cpp`, `.h`, `.hpp`, `.cc`, or `.cxx`.
-2. Press `win+shift+f` (windows) or `cmd+shift+f` (macOS) to format the file.
+2. Press `alt+shift+f` (windows) or `cmd+shift+f` (macOS) to format the file.
 
 ## Features
 
-- **Zero Configuration**: Simply open a file and press `win+shift+f` (windows) or `cmd+shift+f` (macOS) to format the file.
+- **Zero Configuration**: Simply open a file and press `alt+shift+f` (windows) or `cmd+shift+f` (macOS) to format the file.
 - **Customizable Styles**: Leverage Astyle's popular formatting styles, such as:
   - Allman
   - K&R
