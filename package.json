@@ -1,0 +1,140 @@
+{
+  "publisher": "498-00",
+  "name": "cppformat",
+  "displayName": "C/C++ Format: Astyle Code Formatter",
+  "description": "Format C and C++ code, including header files using AStyle. C/CPP Formatter Prettier",
+  "version": "1.0.12",
+  "icon": "imgs/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AB498/cppformat"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "keywords": [
+    "format",
+    "formatter",
+    "c",
+    "c++",
+    "cpp",
+    "astyle",
+    "Astyle",
+    "clang-format",
+    "gcc",
+    "cppformat",
+    "prettier",
+    "formatting",
+    "c++ format",
+    "header"
+  ],
+  "categories": [
+    "Formatters",
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:c",
+    "onLanguage:cpp",
+    "onLanguage:h",
+    "onLanguage:hpp",
+    "onStartupFinished",
+    "workspaceContains:**/*.{c,cpp,h,hpp,cc,cxx,hxx,hh}"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "type": "object",
+        "title": "C/C++ Format: Astyle Format Arguments",
+        "properties": {
+          "cppformat.formatargs": {
+            "type": "string",
+            "default": "",
+            "description": "Leave empty for default. Astyle Format Arguments in this format: pad-oper max-continuation-indent=120 style=google"
+          }
+        }
+      }
+    ],
+    "commands": [],
+    "languages": [
+      {
+        "id": "cpp",
+        "extensions": [
+          ".cpp",
+          ".cxx",
+          ".cc"
+        ],
+        "aliases": [
+          "C++",
+          "cpp",
+          "c++"
+        ]
+      },
+      {
+        "id": "c",
+        "extensions": [
+          ".c"
+        ],
+        "aliases": [
+          "C"
+        ]
+      },
+      {
+        "id": "h",
+        "extensions": [
+          ".h"
+        ],
+        "aliases": [
+          "h"
+        ]
+      },
+      {
+        "id": "hpp",
+        "extensions": [
+          ".hpp",
+          ".hxx",
+          ".hh",
+          ".h++"
+        ],
+        "aliases": [
+          "C++",
+          "cpp",
+          "c++"
+        ]
+      }
+    ],
+    "formatters": [
+      {
+        "language": "cpp",
+        "selector": "source.cpp",
+        "id": "cppformat-formatter",
+        "title": "C/C++ Formatter",
+        "default": true
+      },
+      {
+        "language": "c",
+        "selector": "source.c",
+        "id": "cppformat-c-formatter",
+        "title": "C Formatter",
+        "default": false
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.0.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.13.0"
+  },
+  "dependencies": {
+    "wastyle": "^0.0.5"
+  }
+}
